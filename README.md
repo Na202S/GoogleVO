@@ -134,6 +134,7 @@ class Solution:
 ```
 
 ## LC 329. Longest Increasing Path in a Matrix
+https://leetcode.com/problems/longest-increasing-path-in-a-matrix/
 ```py
 class Solution:
     def longestIncreasingPath(self, matrix: List[List[int]]) -> int:
@@ -162,6 +163,29 @@ class Solution:
                 res = max(res, compute_path(i, j))
         return res
 ```
+
+## LC 56. Merge Intervals
+https://leetcode.com/problems/merge-intervals/
+```py
+class Solution:
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        """
+        按 start 排序
+        不能合并则直接加入
+        能合并则更新 end 时间
+        """
+        res = []
+        intervals.sort(key=lambda x:x[0])
+        for interval in intervals:
+            # res 为空，或者没有 overlap (新start > 旧end)
+            if not res or interval[0] > res[-1][1]:
+                res.append(interval)
+            # 更新 end，取 max(旧end, 新end)
+            else:
+                res[-1][1] = max(res[-1][1], interval[1])
+        return res
+```
+
 
 ## 微波炉
 https://www.1point3acres.com/bbs/thread-826368-1-1.html
