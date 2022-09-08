@@ -122,6 +122,7 @@ class Solution:
         
 
     def pick(self) -> int:
+        # 生成 [0, N - 1] 的随机整数
         i = randrange(self.N)
         return i if i not in self.mp else self.mp[i]
         
@@ -132,6 +133,35 @@ class Solution:
 # param_1 = obj.pick()
 ```
 
+## LC 329. Longest Increasing Path in a Matrix
+```py
+class Solution:
+    def longestIncreasingPath(self, matrix: List[List[int]]) -> int:
+        m, n = len(matrix), len(matrix[0])
+        # dp[i][j]: 从 (i, j) 出发的 Longest Increasing Path 长度
+        dp = [[0] * n for _ in range(m)]
+        def compute_path(i, j):
+            max_path = 1
+            # cache
+            if dp[i][j]:
+                return dp[i][j]
+            # try 向 4 个方向走，取其中的最大值
+            for x, y in (i - 1, j), (i + 1, j), (i, j - 1), (i, j + 1):
+                # 可行
+                if 0 <= x < m and 0 <= y < n and matrix[x][y] > matrix[i][j]:
+                    cur_path = 1 + compute_path(x, y)
+                    max_path = max(max_path, cur_path)
+            # 从 (i, j) 出发的 Longest Increasing Path 长度
+            dp[i][j] = max_path
+            return max_path
+        
+        # 遍历 (i, j)，取dp[i][j]最大值
+        res = 1
+        for i in range(m):
+            for j in range(n):
+                res = max(res, compute_path(i, j))
+        return res
+```
 
 ## 微波炉
 https://www.1point3acres.com/bbs/thread-826368-1-1.html
