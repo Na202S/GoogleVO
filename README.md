@@ -138,8 +138,12 @@ https://leetcode.com/problems/longest-increasing-path-in-a-matrix/
 ```py
 class Solution:
     def longestIncreasingPath(self, matrix: List[List[int]]) -> int:
+        """
+        dp[i][j]: 从 (i, j) 出发的 Longest Increasing Path 长度
+        dfs计算dp
+        遍历 (i, j)，取dp[i][j]最大值
+        """
         m, n = len(matrix), len(matrix[0])
-        # dp[i][j]: 从 (i, j) 出发的 Longest Increasing Path 长度
         dp = [[0] * n for _ in range(m)]
         def compute_path(i, j):
             max_path = 1
