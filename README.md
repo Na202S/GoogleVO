@@ -309,6 +309,30 @@ class Solution:
         return mat
 ```
 
+## LC 965. Univalued Binary Tree
+https://leetcode.com/problems/univalued-binary-tree/
+```py
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def isUnivalTree(self, root: Optional[TreeNode]) -> bool:
+        """
+        recursion: O(N)
+        """
+        # 递归出口
+        if not root:
+            return True
+        # check左右子节点
+        if (root.left and root.left.val != root.val) or (root.right and root.right.val != root.val):
+            return False
+        # check左右子树
+        return self.isUnivalTree(root.left) and self.isUnivalTree(root.right)
+```
+
 ## 微波炉
 https://www.1point3acres.com/bbs/thread-826368-1-1.html
 ```py
