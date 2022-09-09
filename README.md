@@ -190,6 +190,43 @@ class Solution:
         return res
 ```
 
+## LC 1631. Path With Minimum Effort
+https://leetcode.com/problems/path-with-minimum-effort/
+```py
+from collections import deque
+
+class Solution:
+    def minimumEffortPath(self, heights: List[List[int]]) -> int:
+        """
+        BFS + binary search
+        O(m*n*log(maxHeight)), maxHeight = 10^6
+        二分查找最小的 effort
+        BFS检查给定 maxEffrot 时，是否存在符合条件的路径
+        """
+        m, n = len(heights), len(heights[0])
+    
+        def canReach(maxEffort):
+            seen = {(0, 0)}
+            queue = deque([(0, 0)])
+            while queue:
+                i, j = queue.popleft()
+                if (i, j) == (m - 1, n - 1):
+                    return True
+                for x, y in (i, j-1), (i, j+1), (i-1, j), (i+1, j):
+                    if 0 <= x < m and 0 <= y < n and abs(heights[x][y]-heights[i][j]) <= maxEffort and (x, y) not in seen:
+                        seen.add((x, y))
+                        queue.append((x, y))
+            return False
+        
+        lo, hi = 0, 10**6
+        while lo < hi:
+            mid = (lo + hi) >> 1  # avoid TLE
+            if canReach(mid):
+                hi = mid
+            else:
+                lo = mid + 1
+        return lo
+```
 
 ## 微波炉
 https://www.1point3acres.com/bbs/thread-826368-1-1.html
