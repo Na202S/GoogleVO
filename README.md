@@ -282,6 +282,33 @@ class Solution:
         return lo
 ```
 
+## LC 542. 01 Matrix
+https://leetcode.com/problems/01-matrix/
+```py
+class Solution:
+    def updateMatrix(self, mat: List[List[int]]) -> List[List[int]]:
+        """
+        BFS: O(m*n)
+        将所有‘0’加入queue，所有‘1’设为-1 (表示尚未计算)
+        只要queue不为空：访问四方，计算尚未计算的格子距离，加入queue
+        """
+        m, n = len(mat), len(mat[0])
+        queue = deque()
+        for i in range(m):
+            for j in range(n):
+                if mat[i][j] == 0:
+                    queue.append((i, j))
+                else:
+                    mat[i][j] = -1
+        while queue:
+            i, j = queue.popleft()
+            for x, y in (i - 1, j), (i + 1, j), (i, j - 1), (i, j + 1):
+                if 0 <= x < m and 0 <= y < n and mat[x][y] == -1:
+                    mat[x][y] = mat[i][j] + 1
+                    queue.append((x, y))
+        return mat
+```
+
 ## 微波炉
 https://www.1point3acres.com/bbs/thread-826368-1-1.html
 ```py
