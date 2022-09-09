@@ -192,6 +192,60 @@ class Solution:
 
 ## LC 1631. Path With Minimum Effort
 https://leetcode.com/problems/path-with-minimum-effort/
+
+### Dijkstra
+```py
+# import heapq -- for heap
+# import math  -- for inf
+"""
+Time complexity - O(E + VlogV)
+function Dijkstra(Graph, source):
+  for each vertex v in Graph:
+    distance[v] = infinity
+    
+ distance[source] = 0
+ G = the set of all nodes of the Graph
+ 
+ while G is non-empty:
+     Q = node in G with the least dist[ ]
+     mark Q visited
+     for each neighbor N of Q:
+         alt_dist = distance[Q] + dist_between(Q, N)
+         if alt-dist < distance[N]
+             distance[N] := alt_dist
+             
+ return distance[ ]
+"""
+
+class Solution:
+    def minimumEffortPath(self, heights: List[List[int]]) -> int:
+        """
+        Dijkstra: O(m*n*log(m*n))
+        dists[row][col] = 当前的 (0,0) --> (row,col) 最短路径距离
+        minHeap存放 (dists[row][col], row, col)
+        初始时，all dists = inf, except (0, 0) with dist 0
+        
+        Dijkstra, 每次取出距离 source 最近的 node，update所有与node相连的node的dist
+        """
+        m, n = len(heights), len(heights[0])
+        dists = [[math.inf] * n for _ in range(m)]
+        dists[0][0] = 0
+        minHeap = [(0, 0, 0)]
+        
+        while minHeap:
+            dist, i, j = heapq.heappop(minHeap)
+            if (i, j) == (m-1, n-1):
+                return dist
+            for x, y in (i-1, j), (i+1, j), (i,j-1), (i,j+1):
+                if 0 <= x < m and 0 <= y < n:
+                    newDist = max(dist, abs(heights[x][y] - heights[i][j]))
+                    if newDist < dists[x][y]:
+                        dists[x][y] = newDist
+                        heapq.heappush(minHeap, (dists[x][y], x, y))
+```
+
+### BFS + binary search
+
 ```py
 from collections import deque
 
