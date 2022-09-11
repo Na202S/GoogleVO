@@ -1,5 +1,8 @@
 # Google VO
 
+| 序号 | 题目      |
+| :---: |    :---:    |
+| 1 |[餐厅](https://github.com/Na202S/GoogleVO/blob/main/Restaurant.md) |
 
 ## LC 1146. Snapshot Array
 https://leetcode.com/problems/snapshot-array/
