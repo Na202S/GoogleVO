@@ -12,6 +12,76 @@ This means restaurant now has a free table of size equal to table_size. Find the
 Best Customer: Customer whose required size is less than or equal to the table_size. If multiple customers are matching use first come first serve.
 For e.g. if waitlist has customers with these table requirements => [2, 3, 4, 5, 5, 7] and restaurant is serving table_size = 6 then best customer is index 3 (0-based indexing).
 
+```py
+from sortedcontainers import SortedDict
+from collections import deque
+import bisect
+
+class Restaurant():
+
+    def __init__(self) -> None:
+        # key: tableSize, val: deque([customer, ...])
+        self.tableToCustomers = SortedDict()
+        # key: customer, val: tableSize
+        self.waitingList = {}
+
+
+    def waitList(self, customerName, tableSize):
+        self.waitingList[customerName] = tableSize
+        queue = self.tableToCustomers.setdefault(tableSize, deque())
+        queue.append(customerName)
+
+
+    def leave(self, customerName):
+        tableSize = self.waitingList[customerName]
+        queue = self.tableToCustomers[tableSize]
+        queue.remove(customerName)         # remove from deque
+        del self.waitingList[customerName] # remove from wl
+
+        # remove tableSize from sortedDict if no customer waiting for it
+        if not self.tableToCustomers[tableSize]:
+            del self.tableToCustomers[tableSize]
+
+
+    def serve(self, tableSize):
+        if not self.waitingList:
+            print("Waiting list is empty.")
+            return
+        tableSizes = self.tableToCustomers.keys()
+        i = bisect.bisect_left(tableSizes, tableSize - 1) # binary search
+        tableSizeRequest = tableSizes[i]
+        if (tableSizeRequest > tableSize):
+            print("No any customer waiting for Table of size: ", tableSize, " or below.")
+            return
+        queue = self.tableToCustomers[tableSizes[i]]
+        customerName = queue[0]
+        self.leave(customerName)
+        return customerName
+
+
+def test():
+    # test case example
+    res = Restaurant()
+    res.waitList('Alice', 5)
+    res.waitList('Bob', 7)
+    res.waitList('Cam', 3)
+    res.waitList('Den', 5)
+    res.waitList('Eva', 4)
+    res.waitList('Fu', 2)
+    print("tableToCustomers:\n", res.tableToCustomers)
+    print("waitingList:\n",res.waitingList)
+
+    customerToServe = res.serve(1)
+    print("serve customer: ", customerToServe)
+
+    # test leave funtion
+    res.leave("Eva")
+    res.leave("Den")
+    print("tableToCustomers:\n", res.tableToCustomers)
+    print("waitingList:\n",res.waitingList)
+
+test()
+```
 
 ## LC 1146. Snapshot Array
 https://leetcode.com/problems/snapshot-array/
