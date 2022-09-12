@@ -89,6 +89,7 @@ class TrieNode:
     def __init__(self):
         self.children = dict()
         self.cnt_start_with = 0
+        self.isEnd = False
 
 class Trie:
     def __init__(self):
@@ -101,16 +102,31 @@ class Trie:
                 node.children[c] = TrieNode()
             node = node.children[c]
             node.cnt_start_with += 1
+        node.isEnd = True
     
+
     def countWordsStartingWith(self, prefix):
         node = self.root
         for c in prefix:
             if c not in node.children:
-                return 0
+                return 0, []
             node = node.children[c]
-        return node.cnt_start_with
-    
+        cnt = node.cnt_start_with
 
+        words = []
+        def dfs(cur_node, prev):
+            if not cur_node:
+                return
+            if cur_node.isEnd:
+                words.append(prev)
+            for c in cur_node.children:
+                prev += c
+                dfs(cur_node.children[c], prev)
+        
+        dfs(node, prefix)
+        return cnt, words
+             
+    
 def test():
     trie = Trie()
     array = ["b", "bc", "bca", "bcb", "bcc", "m"]
@@ -133,13 +149,13 @@ def test():
 test()
 """
 strings:  ['b', 'bc', 'bca', 'bcb', 'bcc', 'm']
-with prefix b:  5
-with prefix bc:  4
-with prefix bcc:  1
-with prefix a:  0
-with prefix z:  0
+with prefix b:  (5, ['b', 'bc', 'bca', 'bcab', 'bcabc'])
+with prefix bc:  (4, ['bc', 'bca', 'bcab', 'bcabc'])
+with prefix bcc:  (1, ['bcc'])
+with prefix a:  (0, [])
+with prefix z:  (0, [])
 strings:  []
-with prefix a:  0
+with prefix a:  (0, [])
 """
 ```
 
