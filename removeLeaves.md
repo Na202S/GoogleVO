@@ -129,7 +129,10 @@ remove new leaves last res:  [7, 8, 9, 3, 4, 5, 2, 1]
 #### 方法2: 使用 set 存放 children
 ```py
 from collections import deque
-
+"""
+如果真remove，用set存放children以降低复杂度
+算法基本一样，除了不必再用children_cnt
+"""
 class TreeNode:
     def __init__(self, val) -> None:
         self.val = val
@@ -157,6 +160,7 @@ def removeLeaves(root, removeNewLeavesFirst):
         res.append(cur_node.val)
         if cur_node in parent:
             cur_parent = parent[cur_node]
+            # 真remove
             cur_parent.children.remove(cur_node)
             if not cur_parent.children:
                 if removeNewLeavesFirst:
@@ -199,6 +203,3 @@ def testRemoveLeaves():
 
 testRemoveLeaves()
 ```
-
-
-如果真remove，用 `set()` 存放 children 以降低复杂度
