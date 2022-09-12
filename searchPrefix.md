@@ -13,7 +13,7 @@ https://www.1point3acres.com/bbs/thread-815871-1-1.html
 
 def searchPrefix(words, prefix):
     if not words:
-        return 0
+        return 0, []
     
     n = len(words)
     m = len(prefix)
@@ -30,7 +30,7 @@ def searchPrefix(words, prefix):
 
     left = searchFirst()
     if left == n or words[left][:m] != prefix:
-        return 0
+        return 0, []
     
     # 找最后一个含有 prefix 的word
     def searchLast():
@@ -44,8 +44,7 @@ def searchPrefix(words, prefix):
         return lo
 
     right = searchLast()
-    # return right - left + 1
-    return words[left:right+1]
+    return right - left + 1, words[left:right+1]
 
 def test():
     array = ["b", "bc", "bca", "bcb", "bcc", "m"]
@@ -64,13 +63,13 @@ def test():
 test()
 """
 strings:  ['b', 'bc', 'bca', 'bcb', 'bcc', 'm']
-with prefix b:  ['b', 'bc', 'bca', 'bcb', 'bcc']
-with prefix bc:  ['bc', 'bca', 'bcb', 'bcc']
-with prefix bcc:  ['bcc']
-with prefix a:  0
-with prefix z:  0
+with prefix b:  (5, ['b', 'bc', 'bca', 'bcb', 'bcc'])
+with prefix bc:  (4, ['bc', 'bca', 'bcb', 'bcc'])
+with prefix bcc:  (1, ['bcc'])
+with prefix a:  (0, [])
+with prefix z:  (0, [])
 strings:  []
-with prefix a:  0
+with prefix a:  (0, [])
 """
 ```
 
