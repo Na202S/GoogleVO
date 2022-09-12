@@ -203,3 +203,9 @@ def testRemoveLeaves():
 
 testRemoveLeaves()
 ```
+
+- output
+```
+remove new leaves first res:  [3, 9, 5, 8, 4, 7, 2, 1]
+remove new leaves last res:  [9, 3, 8, 7, 5, 4, 2, 1]
+```
