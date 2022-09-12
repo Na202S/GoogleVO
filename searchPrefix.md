@@ -1,4 +1,4 @@
-## 查找prefix
+## 查找prefix (二分)
 https://www.1point3acres.com/bbs/thread-815871-1-1.html
 
 给一个Alphabetically sorted String array和一个prefix，求这个array里面一共有多少个以这个prefix开头的String。
@@ -76,10 +76,13 @@ with prefix a:  0
 
 
 
-
+## Trie 查找 prefix
 Follow up，如果有非常多次Query with prefix操作该怎么办? 
+
 Trie
+
 类似 LC 208: https://leetcode.com/problems/implement-trie-prefix-tree/
+
 LC 1804: https://leetcode.com/problems/implement-trie-ii-prefix-tree/
 
 ```py
