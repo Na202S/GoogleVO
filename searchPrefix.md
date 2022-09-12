@@ -120,8 +120,7 @@ class Trie:
             if cur_node.isEnd:
                 words.append(prev)
             for c in cur_node.children:
-                prev += c
-                dfs(cur_node.children[c], prev)
+                dfs(cur_node.children[c], prev + c)
         
         dfs(node, prefix)
         return cnt, words
