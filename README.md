@@ -1,51 +1,15 @@
 # Google VO
 
-| 序号 | 题目      |
-| :---: |    :---:    |
-| 1 |[餐厅](https://github.com/Na202S/GoogleVO/blob/main/Restaurant.md) |
+|序号|题目|
+|:---:|:---|
+|1|[餐厅](https://github.com/Na202S/GoogleVO/blob/main/Restaurant.md)|
+|2|[Remove leaves from tree](https://github.com/Na202S/GoogleVO/blob/main/removeLeaves.md)|
+|3|[Find first & last prefix](https://github.com/Na202S/GoogleVO/blob/main/searchPrefix.md)|
+|4|[Find bad commits](https://github.com/Na202S/GoogleVO/blob/main/findBadCommits.md)|
+|5|[Invent LinkedList]()?|
+|6|[Find Path in Tree](https://github.com/Na202S/GoogleVO/blob/main/findPathInTree.md)|
+|7|[Lyrics and Keyword](https://github.com/Na202S/GoogleVO/blob/main/keywordInLyrics.md)|
 
-## LC 1146. Snapshot Array
-https://leetcode.com/problems/snapshot-array/
-```py
-class SnapshotArray:
-    """
-    搞一个长度为length的数组array，每一个index上存放的是list
-    每一次set(index, val)，将[snap_id, val]加入array[index]
-    """
-    def __init__(self, length: int):
-        self.snap_id = 0
-        self.array = [[[-1, 0]] for _ in range(length)]
-
-        
-    def set(self, index: int, val: int) -> None:
-        self.array[index].append([self.snap_id, val])
-
-        
-    def snap(self) -> int:
-        self.snap_id += 1
-        return self.snap_id - 1
-        
-
-    def get(self, index: int, snap_id: int) -> int:
-        # 二分查找 <= snap_id 的最大id
-        # pairs = self.array[index]
-        # lo, hi = 0, len(pairs) - 1
-        # while lo < hi:
-        #     mid = (lo + hi + 1) // 2
-        #     cur_snap_id = pairs[mid][0]
-        #     if cur_snap_id > snap_id:
-        #         hi = mid - 1
-        #     else:
-        #         lo = mid
-        # return pairs[lo][1]
-        
-        # bisect.bisect / bisect.bisect_right
-        # 在 a 中找到 x 合适的插入点以维持有序，如果 x 已经在 a 里存在，那么插入点会在已存在元素之后(也就是右边)
-        # bisect.bisect_left: 如果 x 已经在 a 里存在，那么插入点会在已存在元素之后(也就是左边)
-        pairs = self.array[index]
-        targetID = bisect.bisect(pairs, [snap_id + 1]) - 1
-        return pairs[targetID][1]
-```
 
 ## LC 388. Longest Absolute File Path
 https://leetcode.com/problems/longest-absolute-file-path/
