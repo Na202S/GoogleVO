@@ -1,4 +1,4 @@
-## Minimize the distance to the farthest point
+## Blocks and Amenities (Minimize the distance to the farthest point)
 https://leetcode.com/discuss/interview-question/algorithms/285144/interview-question-minimize-the-distance-to-the-farthest-point
 
 Assume you're looking to move, and have a set of amenities that you want to have easy access to from your new home. You have found a neighborhood you like, each block of which has zero or more amenities. How would you pick the block to live in such that the farthest distance to any amenity in your list is minimized?
