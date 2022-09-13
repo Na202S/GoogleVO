@@ -9,7 +9,9 @@
 |5|[Invent LinkedList]()?|
 |6|[Find Path in Tree](https://github.com/Na202S/GoogleVO/blob/main/findPathInTree.md)|
 |7|[Lyrics and Keyword](https://github.com/Na202S/GoogleVO/blob/main/keywordInLyrics.md)|
-
+|8|[Blocks and Amenities (Minimize the distance to the farthest point)](https://github.com/Na202S/GoogleVO/blob/main/blocksAndAmenities.md)|
+|9|[Remove Subtree with Parent List](https://github.com/Na202S/GoogleVO/blob/main/removeSubtree.md)|
+|10|[求树叶掉落铺满时间]()|
 
 ## LC 388. Longest Absolute File Path
 https://leetcode.com/problems/longest-absolute-file-path/
