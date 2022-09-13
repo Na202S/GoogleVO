@@ -37,4 +37,52 @@ class Solution:
         return res
 ```   
  
- ### b) LC 
+ ### b) LC 1882. Process Tasks Using Servers
+https://leetcode.com/problems/process-tasks-using-servers/
+
+```py
+class Solution:
+    def assignTasks(self, servers: List[int], tasks: List[int]) -> List[int]:
+        """
+        freeHeap: (weight, index, startTime)
+        usedHeap: (endTime, weight, index)
+        """
+        
+        freeHeap = [(w, i, 0) for i, w in enumerate(servers)]
+        heapify(freeHeap)
+        usedHeap = []
+        res = []
+        for t, duration in enumerate(tasks):
+            # 无可用server
+            # 不断移除已结束使用的server
+            while not freeHeap or (usedHeap and usedHeap[0][0] <= t):
+                startTime, w, i = heappop(usedHeap)
+                heappush(freeHeap, (w, i, startTime))
+            # 按要求取用server
+            w, i, startTime = heappop(freeHeap)
+            res.append(i)
+            # 将server加入usedHeap
+            endTime = max(startTime, t) + duration
+            heappush(usedHeap, (endTime, w, i))
+        return res
+```
+
+- 本题：
+```py
+import heapq
+def assignTasks(k, tasks):
+    freeHeap = [(0, i) for i in range(k)]
+    heapq.heapify(freeHeap)
+    usedHeap = []
+    res = []
+    for t, duration in tasks:
+        while not freeHeap or (usedHeap and usedHeap[0][0] <= t):
+            startTime, index = heappop(usedHeap)
+            heappush(freeHeap, (startTime, index))
+        
+        startTime, index = heappop(freeHeap)
+        endTime = max(startTime, t) + duration
+        heappush(usedHeap, (endTime, index))
+        res.append(index)
+    return res
+``` 
