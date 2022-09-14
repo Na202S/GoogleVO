@@ -4,7 +4,7 @@
 |:---:|:---|:---:|
 |1|[餐厅](https://github.com/Na202S/GoogleVO/blob/main/Restaurant.md)|5|
 |2|[Remove leaves from tree](https://github.com/Na202S/GoogleVO/blob/main/removeLeaves.md)|2|
-|3|[Find first & last prefix]([https://github.com/Na202S/GoogleVO/blob/main/searchPrefix.md](https://github.com/Na202S/GoogleVO/blob/main/find_strings_start_with_prefix.md)类似LC 34, LC 208, LC 1804|6|
+|3|[Find first & last prefix](https://github.com/Na202S/GoogleVO/blob/main/find_strings_start_with_prefix.md) 类似LC 34, LC 208, LC 1804|6|
 |4|[Find bad commits](https://github.com/Na202S/GoogleVO/blob/main/findBadCommits.md)|3|
 |5|[Invent LinkedList]()?||
 |6|[Find Path in Tree](https://github.com/Na202S/GoogleVO/blob/main/findPathInTree.md)|5|
@@ -103,7 +103,7 @@
 |94|LC 542|
 |95|LC 965|
 |96|LC 250|
-|97|LC 1034|
+|97|✅ [LC 1034. Coloring A Border](https://leetcode.com/problems/coloring-a-border/)|
 |98|[Find Original Array From Doubled Array](https://github.com/Na202S/GoogleVO/blob/main/original_array_from_doubled.md) 类似 LC 954, LC 2007|
 |99|✅ LC 332. Reconstruct Itinerary|
 |100|[Schedule Jobs on Servers](https://github.com/Na202S/GoogleVO/blob/main/schedule_jobs_on_servers.md) 类似 LC 1834, LC 1882|
