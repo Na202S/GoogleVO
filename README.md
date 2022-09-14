@@ -104,8 +104,8 @@
 |95|LC 965|
 |96|LC 250|
 |97|LC 1034|
-|98|✅ LC 954. Array of Doubled Pairs|
+|98|[Find Original Array From Doubled Array](https://github.com/Na202S/GoogleVO/blob/main/original_array_from_doubled.md) 类似 LC 954, LC 2007|
 |99|✅ LC 332. Reconstruct Itinerary|
-|100|✅ LC 1882. Process Tasks Using Servers |
+|100|[Schedule Jobs on Servers](https://github.com/Na202S/GoogleVO/blob/main/schedule_jobs_on_servers.md) 类似 LC 1834, LC 1882|
 
 
