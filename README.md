@@ -71,7 +71,7 @@
 |64|island|
 |65|grid|
 |66|LC 846|
-|67|Game of set|2|
+|67|Game of card set|4|
 |68|排序后的index|
 |69|Linkedlist|
 |70|LC 833|
@@ -97,7 +97,7 @@
 |88|image overlapping|
 |89|merge intervals|
 |90|shortest distance from all buildings|
-|91|LC 329|
+|91|✅ 329. Longest Increasing Path in a Matrix|
 |92|✅ [LC 56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)|
 |93|✅ [LC 1631. Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/)|
 |94|✅ [LC 542. 01 Matrix](https://leetcode.com/problems/01-matrix/)|
@@ -107,5 +107,18 @@
 |98|[Find Original Array From Doubled Array](https://github.com/Na202S/GoogleVO/blob/main/original_array_from_doubled.md) 类似 LC 954, LC 2007|
 |99|✅ LC 332. Reconstruct Itinerary|
 |100|[Schedule Jobs on Servers](https://github.com/Na202S/GoogleVO/blob/main/schedule_jobs_on_servers.md) 类似 LC 1834, LC 1882|
+|101|[Find Logest Path]|
+|102|类似word break|
+|103|[Water Tower]
+|104|[劫匪最多钱]
+|105|[N张卡片]|
+|106|[LC 1293]|
+|107|[没有收到整数最小的]|
+|108|LC 1293|
+|109|LC 778|
+|110|LC 542|
+|111|[N-Queen]|
+|112|[Brand]|
+|113|
 
 
