@@ -4,7 +4,7 @@
 |:---:|:---|:---:|
 |1|[餐厅](https://github.com/Na202S/GoogleVO/blob/main/Restaurant.md)|5|
 |2|[Remove leaves from tree](https://github.com/Na202S/GoogleVO/blob/main/removeLeaves.md)|2|
-|3|[Find first & last prefix](https://github.com/Na202S/GoogleVO/blob/main/searchPrefix.md)|6|
+|3|[Find first & last prefix]([https://github.com/Na202S/GoogleVO/blob/main/searchPrefix.md](https://github.com/Na202S/GoogleVO/blob/main/find_strings_start_with_prefix.md)类似LC 34, LC 208, LC 1804|6|
 |4|[Find bad commits](https://github.com/Na202S/GoogleVO/blob/main/findBadCommits.md)|3|
 |5|[Invent LinkedList]()?||
 |6|[Find Path in Tree](https://github.com/Na202S/GoogleVO/blob/main/findPathInTree.md)|5|
