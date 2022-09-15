@@ -120,5 +120,9 @@
 |111|[N-Queen]|
 |112|[Brand]|
 |113|
-
-
+||
+||背包|
+||Path effort less than threshold|
+||Busiest meeting room|
+||Minimum cells to be blocked|
+||微波炉|
