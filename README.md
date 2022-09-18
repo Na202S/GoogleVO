@@ -104,7 +104,7 @@
 |95|✅ [LC 965. Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/)|
 |96|✅ [LC 250. Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/)|
 |97|✅ [LC 1034. Coloring A Border](https://leetcode.com/problems/coloring-a-border/)|
-|98|[Find Original Array From Doubled Array](https://github.com/Na202S/GoogleVO/blob/main/original_array_from_doubled.md) 类似 LC 954, LC 2007|
+|98|[Find Original Array From Doubled Array](https://github.com/Na202S/GoogleVO/blob/main/original_array_from_doubled.md) 类似 LC 954, LC 2007|2|
 |99|✅ LC 332. Reconstruct Itinerary|
 |100|[Schedule Jobs on Servers](https://github.com/Na202S/GoogleVO/blob/main/schedule_jobs_on_servers.md) 类似 LC 1834, LC 1882|
 |101|[Find Logest Path]|
@@ -120,9 +120,11 @@
 |111|[N-Queen]|
 |112|[Brand]|
 |113|
-||
-||背包|
+||[LC 429] 
+|||
+|||
+||背包, Top K|
 ||Path effort less than threshold|
-||Busiest meeting room|
+||Busiest meeting room|2|
 ||Minimum cells to be blocked|
 ||微波炉|
