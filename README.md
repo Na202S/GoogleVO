@@ -34,7 +34,7 @@
 |27|LC 787|3|
 |28|LC 1834|
 |29|BFS + 最短路径|
-|30|File system|3|
+|30|File system 类似 LC 690. Employee Importance|3|
 |31|BFS/DFS tree|
 |32|新生儿取名|
 |33|返回边界|
