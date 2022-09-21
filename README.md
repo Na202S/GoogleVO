@@ -67,7 +67,7 @@
 |60|LC 1091|
 |61|LC 560|
 |62|meet room 2|
-|63|LC 777|
+|63|LC 777. Swap Adjacent in LR String|2|
 |64|island|
 |65|grid|
 |66|LC 846|
@@ -122,6 +122,8 @@
 |113|
 ||[LC 429] 
 |||
+||Encode, Decode 类似 [LC 443. String Compression](https://leetcode.com/problems/string-compression/)|
+||传纸条问题 类似 [LC 1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)|
 |||
 ||背包, Top K|
 ||Path effort less than threshold|
