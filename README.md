@@ -125,6 +125,8 @@
 ||Encode, Decode 类似 [LC 443. String Compression](https://leetcode.com/problems/string-compression/)|
 ||传纸条问题 类似 [LC 1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)|
 |||
+||[LC 2128. Remove All Ones With Row and Column Flips](https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/)|
+|||
 ||背包, Top K|
 ||Path effort less than threshold|
 ||Busiest meeting room|2|
