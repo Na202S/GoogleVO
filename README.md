@@ -34,15 +34,15 @@
 |27|LC 787|3|
 |28|LC 1834|
 |29|BFS + 最短路径|
-|30|File system 类似 LC 690. Employee Importance|3|
+|30|File system 类似 [LC 690. Employee Importance](https://leetcode.com/problems/employee-importance/)|3|
 |31|BFS/DFS tree|
 |32|新生儿取名|
 |33|返回边界|
 |34|Robber开锁|
-|35|LC 939|
+|35|Check if there is a square 类似 [LC 939. Minimum Area Rectangle](https://leetcode.com/problems/minimum-area-rectangle/)|
 |36|Error Rate|2|
 |37|The less lockdown city|
-|38|LC 41|
+|38|[LC 41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)|
 |39|Tree tranversal|
 |40|还原句子|
 |41|Prime Number|
