@@ -74,14 +74,14 @@
 |67|Game of card set|4|
 |68|排序后的index|
 |69|Linkedlist|
-|70|LC 833|
-|71|最长路径|
-|72|巨大数组找中位数|
-|73|build tree|
-|74|LC 114|
-|75|LC 133|
-|76|LC 1244|
-|75|LC 236|
+|70|[LC 833. Find And Replace in String](https://leetcode.com/problems/find-and-replace-in-string/)|
+|71|?最长路径|
+|72|?巨大数组找中位数|
+|73|?build tree|
+|74|[LC 114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/)|
+|75|[LC 133. Clone Graph](https://leetcode.com/problems/clone-graph/)|
+|76|[LC 1244. Design A Leaderboard](https://leetcode.com/problems/design-a-leaderboard/)|
+|75|[LC 236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|
 |76|LC 488|
 |77|list of log|
 |78|LC 528|
