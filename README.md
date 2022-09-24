@@ -126,7 +126,10 @@
 ||传纸条问题 类似 [LC 1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)|
 |||
 ||[LC 2128. Remove All Ones With Row and Column Flips](https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/)|
-|||
+||[LC 429. N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/)|
+||[LC 2007. Find Original Array From Doubled Array](https://leetcode.com/problems/find-original-array-from-doubled-array/)|
+||[LC 56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)|
+||[LC 981. Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/)|
 ||背包, Top K|
 ||[Path effort less than threshold](https://github.com/Na202S/GoogleVO/blob/main/path_effort_less_than_threshold.md), 类似 [LC 1631](https://leetcode.com/problems/path-with-minimum-effort/)|
 ||[Busiest meeting room](https://github.com/Na202S/GoogleVO/blob/main/busiest_meeting_room.md), 类似 LC 1882, 1834, 1606, 2402|2|
