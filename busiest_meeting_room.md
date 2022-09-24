@@ -46,3 +46,8 @@ def test():
 test() # 1
 ```
 
+## Same question
+https://leetcode.com/discuss/interview-question/1586349/Google-or-Phone-Interview-or-Maximum-Reservations
+
+There is an hospital with N rooms(0 - N-1).
+At any given time a patient can book a room(would be the first available room) for certain unit of time. At the end of the day find which room has maximum booking.
