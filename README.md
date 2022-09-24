@@ -82,9 +82,9 @@
 |75|[LC 133. Clone Graph](https://leetcode.com/problems/clone-graph/)|
 |76|[LC 1244. Design A Leaderboard](https://leetcode.com/problems/design-a-leaderboard/)|
 |75|[LC 236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)|
-|76|LC 488|
+|76|[LC 488. Zuma Game](https://leetcode.com/problems/zuma-game/)|
 |77|list of log|
-|78|LC 528|
+|78|类似 [LC 528. Random Pick wi                                         th Weight](https://leetcode.com/problems/random-pick-with-weight/)|
 |79|Perfect Square|
 |80|N baseball team|
 |81|LC 1138|
@@ -131,4 +131,5 @@
 ||Path effort less than threshold|
 ||Busiest meeting room|2|
 ||Minimum cells to be blocked|
+||[LC 1568. Minimum Number of Days to Disconnect Island](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/) [变种](https://github.com/Na202S/GoogleVO/blob/main/min_num_cells_to_be_blocked.md)|
 ||微波炉|
