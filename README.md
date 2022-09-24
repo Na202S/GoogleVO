@@ -124,8 +124,18 @@
 |||
 ||Encode, Decode 类似 [LC 443. String Compression](https://leetcode.com/problems/string-compression/)|
 ||传纸条问题 类似 [LC 1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)|
-|||
-||[LC 2128. Remove All Ones With Row and Column Flips](https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/)|
+||[LC 833. Find And Replace in String](https://leetcode.com/problems/find-and-replace-in-string/)|
+||[LC 1048. Longest String Chain](https://leetcode.com/problems/longest-string-chain/), LC 145?|
+||Nodes within k-hop, 类似 [LC 863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)|
+||Bus and employee|
+||传播病毒|
+||Flip bulb [LC 2128. Remove All Ones With Row and Column Flips](https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/)|
+||[LC 103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|
+||Card Set|
+||Similar string|
+||Song playlist|
+||Cord Tree|
+||[One hamming distance](https://github.com/Na202S/GoogleVO/blob/main/one_hamming_distance.md)|
 ||[LC 429. N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/)|
 ||[LC 2007. Find Original Array From Doubled Array](https://leetcode.com/problems/find-original-array-from-doubled-array/)|
 ||[LC 56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)|
