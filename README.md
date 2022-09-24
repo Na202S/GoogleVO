@@ -128,7 +128,7 @@
 ||[LC 2128. Remove All Ones With Row and Column Flips](https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/)|
 |||
 ||背包, Top K|
-||Path effort less than threshold|
+||[Path effort less than threshold](https://github.com/Na202S/GoogleVO/blob/main/path_effort_less_than_threshold.md), 类似 [LC 1631](https://leetcode.com/problems/path-with-minimum-effort/)|
 ||Busiest meeting room, 类似 LC 1882, 1834, 1606, 2402|2|
 ||[Min cells to be blocked](https://github.com/Na202S/GoogleVO/blob/main/min_num_cells_to_be_blocked.md), 类似 [LC 1568. Minimum Number of Days to Disconnect Island](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/)|
 ||微波炉|
