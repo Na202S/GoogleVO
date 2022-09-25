@@ -29,10 +29,8 @@
 |22|bfs|
 |23|mn|
 |24|bfs|
-|25|LC 710|
-|26|LC 1568|
-|27|LC 787|3|
-|28|LC 1834|
+|25|[LC 710. Random Pick with Blacklist](https://leetcode.com/problems/random-pick-with-blacklist/)|
+|27|[LC 787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)|3|
 |29|BFS + 最短路径|
 |30|File system 类似 [LC 690. Employee Importance](https://leetcode.com/problems/employee-importance/)|3|
 |31|BFS/DFS tree|
