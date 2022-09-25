@@ -67,7 +67,6 @@
 |60|[LC 1091. Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)|
 |61|LC 560|
 |62|meet room 2|
-|63|LC 777. Swap Adjacent in LR String|2|
 |64|island|
 |65|grid|
 |66|LC 846|
@@ -122,10 +121,29 @@
 |113|
 ||[LC 429] 
 |||
+||684. Redundant Connection|
+||
 ||Encode, Decode 类似 [LC 443. String Compression](https://leetcode.com/problems/string-compression/)|
+|63|LC 777. Swap Adjacent in LR String||
 ||传纸条问题 类似 [LC 1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)|
+||1377. Frog Position After T Seconds|
+||1642. Furthest Building You Can Reach|
+||Unsorted binary search|
+||Minimise the cost to validate the itenerary 类似 1548|
+||棋盘随机排列 类似 384. Shuffle an Array|
+||Unix环境变量替换|
+||[LC 2089. Find Target Indices After Sorting Array](https://leetcode.com/problems/find-target-indices-after-sorting-array/)|
+||餐厅OOD|
+||287. Find the Duplicate Number|
+||Unique combination sum|
+||324. Wiggle Sort II|
+||394. Decode String|
+||88. Merge Sorted Array|
+||359. Logger Rate Limiter|
 ||一堆卡片，找出card set|
-||[刷篱笆](https://www.1point3acres.com/bbs/thread-815081-1-1.html)|
+||[刷篱笆](https://www.1point3acres.com/bbs/thread-815081-1-1.html) LC 1526, LC 664|
+||[LC 473. Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/)|
+||左上到右下路经中的最大值的最小值 类似 [LC 1102. Path With Maximum Minimum Value](https://leetcode.com/problems/path-with-maximum-minimum-value/)|
 ||[LC 272. Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/)|
 ||[LC 968. Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/)|
 ||[判断某个数是否在任一区间中](https://www.1point3acres.com/bbs/thread-814097-1-1.html)|
@@ -152,7 +170,7 @@
 ||Nodes within k-hop, 类似 [LC 863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)|
 ||Bus and employee|
 ||传播病毒|
-||Flip bulb [LC 2128. Remove All Ones With Row and Column Flips](https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/)|
+||Flip bulb [LC 2128. Remove All Ones With Row and Column Flips](https://leetcode.com/problems/remove-all-ones-with-row-and-column-flips/)|2|
 ||[LC 103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)|
 ||Card Set|
 ||Similar string|
