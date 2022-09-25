@@ -124,8 +124,18 @@
 |||
 ||Encode, Decode 类似 [LC 443. String Compression](https://leetcode.com/problems/string-compression/)|
 ||传纸条问题 类似 [LC 1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)|
+||一堆卡片，找出card set|
+||[刷篱笆](https://www.1point3acres.com/bbs/thread-815081-1-1.html)|
+||[LC 272. Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/)|
+||[LC 968. Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/)|
+||[判断某个数是否在任一区间中](https://www.1point3acres.com/bbs/thread-814097-1-1.html)|
+||[?没看懂](https://www.1point3acres.com/bbs/thread-807862-1-1.html)|
+||[LC 127. Word Ladder](https://leetcode.com/problems/word-ladder/)|
+||[LC 126. Word Ladder II](https://leetcode.com/problems/word-ladder-ii/)|
+||[老鼠夹子](https://www.1point3acres.com/bbs/thread-814295-1-1.html)|
 ||[LC 299. Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)|
 ||[LC 900. RLE Iterator](https://leetcode.com/problems/rle-iterator/)|
+||[LC 169. Majority Element](https://leetcode.com/problems/majority-element/)|
 ||菜单|
 ||字母接龙游戏 Trie|
 ||递减序列|
