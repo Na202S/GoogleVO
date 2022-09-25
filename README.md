@@ -97,15 +97,15 @@
 |88|image overlapping|
 |89|merge intervals|
 |90|shortest distance from all buildings|
-|91|✅ 329. Longest Increasing Path in a Matrix|
-|92|✅ [LC 56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)|
-|93|✅ [LC 1631. Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/)|
-|94|✅ [LC 542. 01 Matrix](https://leetcode.com/problems/01-matrix/)|
-|95|✅ [LC 965. Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/)|
-|96|✅ [LC 250. Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/)|
-|97|✅ [LC 1034. Coloring A Border](https://leetcode.com/problems/coloring-a-border/)|
+|91|329. Longest Increasing Path in a Matrix|
+|92|[LC 56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)|
+|93|[LC 1631. Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/)|
+|94|[LC 542. 01 Matrix](https://leetcode.com/problems/01-matrix/)|
+|95|[LC 965. Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/)|
+|96|[LC 250. Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees/)|
+|97|[LC 1034. Coloring A Border](https://leetcode.com/problems/coloring-a-border/)|
 |98|[Find Original Array From Doubled Array](https://github.com/Na202S/GoogleVO/blob/main/original_array_from_doubled.md) 类似 LC 954, LC 2007|2|
-|99|✅ LC 332. Reconstruct Itinerary|
+|99|LC 332. Reconstruct Itinerary|
 |100|[Schedule Jobs on Servers](https://github.com/Na202S/GoogleVO/blob/main/schedule_jobs_on_servers.md) 类似 LC 1834, LC 1882|
 |101|[Find Logest Path]|
 |102|类似word break|
@@ -124,6 +124,19 @@
 |||
 ||Encode, Decode 类似 [LC 443. String Compression](https://leetcode.com/problems/string-compression/)|
 ||传纸条问题 类似 [LC 1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)|
+||[LC 299. Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/)|
+||[LC 900. RLE Iterator](https://leetcode.com/problems/rle-iterator/)|
+||菜单|
+||字母接龙游戏 Trie|
+||递减序列|
+||[LC 1094. Car Pooling](https://leetcode.com/problems/car-pooling/submissions/)|
+||传纸条问题 类似 [LC 1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)|
+||出度为0的图节点|
+||类似 [LC 297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)|
+||种花|
+||swap 数组|
+||排座位|
+||[LC 695. Max Area of Island](https://leetcode.com/problems/max-area-of-island/) 变形|
 ||[LC 833. Find And Replace in String](https://leetcode.com/problems/find-and-replace-in-string/)|
 ||[LC 1048. Longest String Chain](https://leetcode.com/problems/longest-string-chain/), LC 145?|
 ||Nodes within k-hop, 类似 [LC 863](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/)|
