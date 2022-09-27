@@ -34,7 +34,7 @@ class Restaurant():
     def leave(self, customerName):
         tableSize = self.waitingList[customerName]
         queue = self.tableToCustomers[tableSize]
-        queue.remove(customerName)         # remove from deque
+        queue.remove(customerName)         # remove from deque - O(n)
         del self.waitingList[customerName] # remove from wl
 
         # remove tableSize from sortedDict if no customer waiting for it
@@ -47,7 +47,10 @@ class Restaurant():
             print("Waiting list is empty.")
             return
         tableSizes = self.tableToCustomers.keys()
-        i = bisect.bisect_left(tableSizes, tableSize - 1) # binary search
+        # keys是unique的，所以
+        # 若tableSize在keys中，bisect返回tableSize的后一位，再减1得到tableSize的位置
+        # 若tableSize不在keys中，bisect返回tableSize应该插入的位置，再减1得到最接近tableSize且 < tableSize的size位置
+        i = bisect.bisect_right(tableSizes, tableSize) - 1 # binary search
         tableSizeRequest = tableSizes[i]
         if (tableSizeRequest > tableSize):
             print("No any customer waiting for Table of size: ", tableSize, " or below.")
@@ -70,7 +73,7 @@ def test():
     print("tableToCustomers:\n", res.tableToCustomers)
     print("waitingList:\n",res.waitingList)
 
-    customerToServe = res.serve(1)
+    customerToServe = res.serve(6)
     print("serve customer: ", customerToServe)
 
     # test leave funtion
