@@ -30,7 +30,7 @@ def findBadCommits(n, performance):
             return
         if lo == hi - 1:
             if worseCommit(lo, hi):
-                res.append(hi + 1)
+                res.append(hi + 1) # 1-indexed
             return
         
         mid = (lo + hi) >> 1
